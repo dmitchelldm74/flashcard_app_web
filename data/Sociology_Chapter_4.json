@@ -1,0 +1,13 @@
+{
+    "meta": {
+        "token": "6f16c3e6-6311-49e5-aa19-162a1dd805b5",
+        "version": "0.0.1",
+        "title": "Sociology Chapter 4"
+    },
+    "deck": [
+        {"front": "Group", "back": "Two or more people who interact on the basis of a shared social structure and who recognize mutual dependency"},
+        {"front": "Types of groups", "back": "Aggregates and Categories"},
+        {"front": "Aggregates", "back": "people who are temporarily clustered together in same location"},
+        {"front": "Category", "back": "Collection of people who share a common characteristic"}
+    ]
+}

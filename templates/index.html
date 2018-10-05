@@ -1,0 +1,44 @@
+<form action="/search" method="GET">
+    <input type="text" name="q" /><input type="submit" value="Search" />
+</form>
+<hr>
+<form method="POST">
+    <table id="tb1">
+        <tr>
+            <td>Name: </td><td><input type="text" name="name" /></td>
+        </tr>
+        <tr>
+            <td>Tags: </td><td><input type="text" name="tags" /></td>
+        </tr>
+        <tr>
+            <td>Front:</td><td><input id="front" /></td><td>Back:</td><td><input id="back"/></td><td><button type="button" onclick="add_card('#tb1', '#front', '#back');">Add Card</button></td>
+        </tr>
+        <tr>
+            <td colspan="4"></td><td><input type="submit" style="float:right;"/></td>
+        </tr>
+    </table>
+</form>
+<script>
+    function add_card(table, front, back) {
+        var front = document.querySelector(front);
+        var back = document.querySelector(back);
+        var row = document.createElement("tr");
+        var ftd = document.createElement("td");
+        var btd = document.createElement("td");
+        var front2 = document.createElement("input");
+        front2.setAttribute("name", "front");
+        front2.setAttribute("type", "text");
+        front2.value = front.value;
+        var back2 = document.createElement("input");
+        back2.setAttribute("name", "back");
+        back2.setAttribute("type", "text");
+        back2.value = back.value;
+        ftd.appendChild(front2);
+        btd.appendChild(back2);
+        row.appendChild(ftd);
+        row.appendChild(btd);
+        document.querySelector(table).appendChild(row);
+        front.value = "";
+        back.value = "";
+    }
+</script>

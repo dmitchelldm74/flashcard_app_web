@@ -1,0 +1,27 @@
+{
+    "meta": {
+        "token": "6f16c3e6-6311-49e5-aa19-162a1dd805b5",
+        "version": "0.0.1",
+        "title": "The Power of Tens"
+    },
+    "deck": [
+        {"front": "10^0     Hint: No zeroes!", "back": "1"},
+        {"front": "10^1", "back": "10     1 Zero :)"},
+        {"front": "10^2", "back": "100"}
+    ]
+}
+/*
+function Input(queryElement) {
+    if (queryElement == Element) {
+       this._el = queryElement; 
+    } else {
+        this._el = document.querySelector;
+    }
+    this.value = function (text) {
+        if (text != undefined) {
+            this._el.value = text;
+            return this;
+        }
+        return this._el.value;
+    };
+}*/
